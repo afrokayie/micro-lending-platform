@@ -1,6 +1,8 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-ignition-ethers");
 
+require('dotenv').config();
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
@@ -22,7 +24,7 @@ module.exports = {
     rootstockTestnet: {
       url: "https://public-node.testnet.rsk.co",
       chainId: 31,
-      accounts: [process.env.PRIVATE_KEY || ""] // Add your private key
+      accounts: [process.env.PRIVATE_KEY] // Add your private key
     }
   }
 };
