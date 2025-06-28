@@ -18,6 +18,11 @@ module.exports = {
     },
     localhost: {
       url: "http://127.0.0.1:8545"
+    },
+    rootstockTestnet: {
+      url: "https://public-node.testnet.rsk.co",
+      chainId: 31,
+      accounts: [process.env.PRIVATE_KEY || ""] // Add your private key
     }
   }
 };
