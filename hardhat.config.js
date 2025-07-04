@@ -16,7 +16,7 @@ module.exports = {
   },
   networks: {
     hardhat: {
-      // Built-in test network
+
     },
     localhost: {
       url: "http://127.0.0.1:8545"
